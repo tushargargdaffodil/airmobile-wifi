@@ -3,13 +3,19 @@
 <div class="container" ng-controller="airmobileWifiHelloWorld">
   <div class="row">
     <div class="col-12-sm">
-      <div class="well">
-        <h2>Congratulations</h2>
-        <p class="lead">You've successfully created your first Kibana Plugin!</p>
+      <div class="bootstrap-demo">
+        <div class="panel panel-default">
+          <div class="panel-heading">{{ title }}</div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="https://airmobile-wifi.com/documentation">Documentation</a></li>
+              <li class="list-group-item"><a href="https://localhost:3000">localhost:3000</a></li>
+              <li class="list-group-item"><a href="https://localhost:3001">localhost:3001</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <h1>{{ title }}</h1>
-      <p class="lead">{{ description }}</p>
-      <p>The current time is {{ currentTime }}</p>
     </div>
   </div>
 </div>
+
