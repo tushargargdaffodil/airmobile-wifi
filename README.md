@@ -28,4 +28,15 @@ See the [kibana contributing guide](https://github.com/elastic/kibana/blob/maste
 
     Run the server tests using mocha
 
-For more information about any of these commands run `npm run ${task} -- --help`.
+For more information about any of these commands run `npm run ${task} -- --help`. 
+
+## production 
+
+1.clone the project into '/usr/share/kibana/plugins/' folder
+2. run the following commands: 
+   cd /usr/share/kibana/optimize/
+      sudo rm -rf *
+         sudo rm .babelcache.json
+           cd ..
+             bin/kibana --optimize
+
