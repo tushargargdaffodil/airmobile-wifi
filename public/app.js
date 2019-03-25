@@ -6,6 +6,7 @@ import uiRoutes from 'ui/routes';
 import 'ui/autoload/styles';
 import './less/main.less';
 import template from './templates/index.html';
+import $ from 'jquery';
 
 uiRoutes.enable();
 uiRoutes
@@ -32,4 +33,8 @@ uiModules
     $scope.currentTime = currentTime.add(1, 'second').format('HH:mm:ss');
   }, 1000);
   $scope.$watch('$destroy', unsubscribe);
+});
+
+$(document).on('ready', function (event) {
+   document.body.innerHTML = document.body.innerHTML.replace(/Kibana/g, 'AirMobile');
 });
