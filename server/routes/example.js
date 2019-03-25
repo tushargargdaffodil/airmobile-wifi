@@ -4,7 +4,7 @@ export default function (server) {
     path: '/api/airmobile_wifi/example',
     method: 'GET',
     handler(req, reply) {
-      reply({ time: (new Date()).toISOString() });
+      retunr { time: (new Date()).toISOString() };
     }
   });
 
