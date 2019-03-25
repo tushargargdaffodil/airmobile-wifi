@@ -12,13 +12,7 @@ export default function (kibana) {
         description: 'Basic Plugin for Kibana',
         main: 'plugins/airmobile_wifi/app'
       },
-      
-      
-      translations: [
-        resolve(__dirname, './translations/es.json')
-      ],
-      
-      
+    
       hacks: [
         'plugins/airmobile_wifi/hack'
       ]
